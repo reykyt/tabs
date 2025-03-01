@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.tabcontent {
+
+    height: 0px;
+    color: rgb(240, 239, 239);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    overflow: hidden;
+    text-shadow: 0 0 5px rgb(83, 83, 83);
+}
+
+.tabcontent.active {
+    padding: 20px;
+    height: 250px;
+
+}
+
+#tablist {
+    background-color: rgb(63, 63, 63);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.tab-btn {
+    color: white;
+    background-color: rgb(63, 63, 63);
+    border: none;
+    flex: 1;
+    height: 90px;
+    cursor: pointer;
+
+}
+
+.tab-btn:hover:not(.active) {
+    background-color: rgba(109, 109, 106, 0.986);
+}
+
+#HTML,
+[data-leng="HTML"].active {
+    background-color: orangered;
+}
+
+#CSS,
+[data-leng="CSS"].active {
+    background-color: aqua;
+}
+
+#JS,
+[data-leng="JS"].active {
+    background-color: rgb(216, 216, 47);
+}
+
+#PHP,
+[data-leng="PHP"].active {
+    background-color: rgb(142, 15, 201);
+}
+
+
+.tab-bnt,
+.active
